@@ -1,0 +1,17 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    url: jdbc:h2:mem:persons
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    show-sql: true
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
